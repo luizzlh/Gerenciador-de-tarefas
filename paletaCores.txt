@@ -1,0 +1,4 @@
+background: #153448
+main: #3C5B6F
+itens: #948979
+texto: #DFD0B8

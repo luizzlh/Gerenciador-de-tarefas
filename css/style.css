@@ -1,0 +1,73 @@
+:root{
+    --corBG: #153448;
+    --corItens: #948979;
+    --corTexto: #DFD0B8;
+    --corMain: #1c435e;
+}
+body{
+    background-color: var(--corBG);
+}
+.container{
+    background-color: var(--corMain);
+    max-width: 450px;
+    margin: 3rem auto 0;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--corItens);
+    border-radius: 10px;
+}
+.containerCabecalho{
+    border-bottom: 3px solid var(--corItens);
+}
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    margin:.75rem .75rem;
+    gap: 5px;
+}
+.input{
+    height: 30px;
+    border: 1px solid var(--corItens);
+    background-color: var(--corMain);
+    border-radius: 5px;
+    color: var(--corTexto);
+}
+.input::placeholder{
+    color: var(--corTexto);
+}
+.btnInserir{
+    border-radius: 5px;
+    height: 30px;
+    border: none;
+    background-color: var(--corBG);
+    color: var(--corTexto);
+    font-size: 20px;
+    cursor: pointer;
+}
+.caixaTarefas{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    color: var(--corTexto);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.tarefaAdicionada{
+    height: 30px;
+    margin: .50rem .75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icones{
+    display: flex;
+    gap: 10px;
+}
+.iconeLixeira, .iconeConcluido{
+    width: 20px;
+    cursor: pointer;
+}
+.tarefaConcluida{
+    text-decoration: line-through;
+}
